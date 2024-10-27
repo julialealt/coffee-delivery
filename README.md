@@ -1,51 +1,51 @@
-# React + TypeScript + Vite
+# Coffee Delivery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- Typescript
+- React Hook Form
+- Zod
+- Radix
+- Styled Components
+- Phosphor Icons
+- Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Functionalities
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- List of products (coffees) available for purchase
+- Add a specific quantity of items to the cart
+- Increase or remove the number of items in the cart
+- Form to fill in user address and payment type
+- Display the total number of items in the cart in the Header
+- Display the total value of the sum of items in the cart multiplied by the value
+
+
+## Running locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/julialealt/coffee-delivery.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Enter the project directory
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+  cd coffee-delivery
 ```
-# coffee-delivery
+
+Install the dependencies
+
+```bash
+  pnpm i
+```
+
+Start the app
+
+```bash
+  pnpm run dev
+```
